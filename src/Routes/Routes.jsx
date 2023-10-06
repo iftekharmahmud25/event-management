@@ -3,11 +3,7 @@ import MainLayout from "../Layout/MainLayout";
 import Home from "../Pages/Home/actualhome/Home";
 import Login from "../Pages/Login/Login";
 import SingUp from "../Pages/singup/SingUp";
-
-
-
-
-
+import CardDetails from "../Pages/CardDetails/CardDetails";
 
 
 const router = createBrowserRouter([
@@ -27,6 +23,10 @@ const router = createBrowserRouter([
              {
                 path:"/signUp",
                 element: <SingUp></SingUp>
+             },
+             {  
+                path: "/services/:id",
+                element: <CardDetails></CardDetails>
              }
          ]
      }

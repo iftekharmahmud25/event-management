@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 
 const SingUp = () => {
     return (
-        <div className="hero">
+    <div>
+         <h1 className="text-center text-3xl font-bold">Please Sign Up</h1>
+         <div className="hero">
         <div className="hero-content ">
         
           <div className="card lg:w-[300px] shadow-2xl bg-base-100">
@@ -37,6 +39,7 @@ const SingUp = () => {
           </div>
         </div>
       </div>
+    </div>
     );
 };
 
