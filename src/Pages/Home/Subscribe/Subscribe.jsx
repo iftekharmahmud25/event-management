@@ -1,8 +1,9 @@
 
 
 const Subscribe = () => {
+ 
     return (
-        <div className="hero h-[200px]" style={{backgroundImage: 'url(https://i.ibb.co/BjSRJV5/cool-background-1.png)'}} >
+        <div  className="hero h-[200px]" style={{backgroundImage: 'url(https://i.ibb.co/BjSRJV5/cool-background-1.png)'}} >
   <div className="hero-overlay "></div>
   <div className="hero-content text-center text-neutral-content">
     <div className="max-w-md">
