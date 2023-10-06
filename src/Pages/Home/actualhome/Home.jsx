@@ -1,4 +1,6 @@
-import Banner from "./homePage/Banner/Banner";
+
+import Banner from "../Banner/Banner";
+import Subscribe from "../Subscribe/Subscribe";
 
 
 const Home = () => {
@@ -6,6 +8,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <h1>this is home</h1>
+           <Subscribe></Subscribe>
         </div>
     );
 };
