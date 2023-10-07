@@ -4,12 +4,14 @@ import Home from "../Pages/Home/actualhome/Home";
 import Login from "../Pages/Login/Login";
 import SingUp from "../Pages/singup/SingUp";
 import CardDetails from "../Pages/CardDetails/CardDetails";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
 
 const router = createBrowserRouter([
      {
          path : "/",
          element : <MainLayout></MainLayout>,
+         errorElement:<ErrorPage></ErrorPage>,
 
          children : [
              {
@@ -26,7 +28,8 @@ const router = createBrowserRouter([
              },
              {  
                 path: "/services/:id",
-                element: <CardDetails></CardDetails>
+                element: <CardDetails></CardDetails>,
+                loader : ()=> fetch('/services.json')
              }
          ]
      }
