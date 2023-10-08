@@ -14,21 +14,18 @@ const ServiceCards = () => {
             .then((data) => setServiceData(data))
             .catch((error) => console.error("Error fetching data:", error));
     }, []);
-     
-  useEffect(()=>{
-    Aos.init();
-  },[])
 
-
-
+    useEffect(() => {
+        Aos.init();
+    }, [])
 
     return (
         <div >
             {serviceData.map((service) => (
                 <div data-aos="fade-up"
                     key={service.id}>
-                    <div 
-                    
+                    <div
+
                         className="md:flex md:justify-center mb-12 mt-4 md:gap-3 lg:gap-10  lg:ms-0 lg:me-0 ms-6 me-6">
                         <div className="md:w-[50%]">
                             <img className="rounded-md shadow-md lg:h-[300px] h-[240px] w-[100%] md:w-[340px] lg:w-[500px]" src={`${service.image}`} alt={service.name} />

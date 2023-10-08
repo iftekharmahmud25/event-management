@@ -3,7 +3,6 @@ import { Link,  useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 import app from "../../Firebase/Firebase.config";
-
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -26,8 +25,6 @@ const handleGoogleSignIn = () => {
         })
 }
 
-
-
  const {signIn} = useContext(AuthContext)
  const location = useLocation();
  const navigate = useNavigate();
@@ -36,7 +33,6 @@ const handleGoogleSignIn = () => {
   const handleLogin = e =>{
     e.preventDefault();
     const form = new FormData(e.currentTarget);
-    
     const email = form.get('email');
     const password = form.get('password');
     console.log(email,password)
@@ -44,16 +40,13 @@ const handleGoogleSignIn = () => {
     .then(resut =>{
         console.log(resut.user)
         e.target.reset()
-        
-
-      navigate(location ?.state ? location.state :  '/')
+        navigate(location ?.state ? location.state :  '/')
     })
     .catch(error =>{
-        console.log(error)
+        toast(error.message)
     })
 
 }
-
 
     return (
   
@@ -91,13 +84,10 @@ const handleGoogleSignIn = () => {
                 <div className="divider">OR</div>
                 <p className="text-center ">sign in with</p>
                <button onClick={handleGoogleSignIn} className=" font-bold mb-2 btn bg-cyan-800 hover:bg-cyan-600 text-white w-[35%] mx-auto  ">Google</button>
-              
               </div>
 
             </div>
           </div>
-          
-
           <ToastContainer />
     </div>
 

@@ -2,42 +2,42 @@
     {
       "id": 1,
       "name": "Concert Planning Service",
-      "price": 5.6,
+      "price": 500,
       "description": "Welcome to our Concert Planning Service, the ultimate destination for turning your musical dreams into a breathtaking reality. We specialize in crafting unforgettable music concerts and festivals that leave an indelible mark on your audience. Our comprehensive range of services covers every facet of event management, including artist booking, meticulous stage design, state-of-the-art sound and lighting setup, ticket management, and crowd control. Whether you're envisioning an intimate acoustic performance or a sprawling music festival extravaganza, we guarantee that your event will be a musical sensation that not only meets but exceeds your expectations.Beyond the basics, we offer a team of seasoned sound engineers who can sculpt the perfect auditory experience, ensuring that every note resonates with clarity and emotion. Our attention to detail is unparalleled, and we pride ourselves on transforming your musical vision into an immersive reality that captivates your audience from start to finish.",
       "image": "https://i.ibb.co/6bPgWSL/happy-people-dance-nightclub-party-concert-31965-14393.jpg"
     },
     {
       "id": 2,
       "name": "Theater Production Service",
-      "price": 6.00,
+      "price": 400,
       "description": "Experience the magic of theater like never before with our Theater Production Service. We are your dedicated partners in bringing your theatrical vision to life. From casting the perfect ensemble to designing intricate and immersive sets, managing costumes that transport your audience to another time and place, and conducting rigorous rehearsals to perfect every performance, we handle it all with unwavering expertise and passion.Our commitment doesn't stop there. We take charge of ticket sales and promotions, ensuring that your production receives the spotlight it deserves. Our pricing is highly adaptable, allowing us to cater to productions of all scales and complexities. Whether you're aiming for an intimate black-box performance or a grand Broadway-style spectacle, we have the creativity, resources, and dedication to make it happen.",
       "image": "https://i.ibb.co/QKngPp1/rows-red-seats-theater-53876-64712.jpg"
     },
     {
       "id": 3,
       "name": "Film Screening Management",
-      "price": 7.3,
+      "price": 900,
       "description": "Roll out the red carpet for your film screening or premiere with our Film Screening Management service. Lights, camera, action! We provide comprehensive solutions that cover every aspect of your cinematic event, starting with the selection of the perfect venue and extending to state-of-the-art projection equipment setup, film licensing, and innovative audience engagement strategies.No matter whether you're showcasing an indie gem that's close to your heart or a blockbuster destined for cinematic glory, our customized pricing ensures that you get maximum value for your investment. Moreover, our expertise in film curation helps you select the ideal lineup for your screening, ensuring that your audience experiences a cinematic journey that leaves them craving for more.",
       "image": "https://i.ibb.co/0Zpnc2N/scenes-making-film-video-production-movie-crew-team-working-silhouette-camera-equipment-set-studio-2.jpg"
     },
     {
       "id": 4,
       "name": "Comedy Show Arrangements",
-      "price": 10,
+      "price": 800,
       "description": "Prepare to have your funny bone tickled with our professional Comedy Show Arrangements. We leave no joke unturned, taking care of every aspect from booking top-notch comedians who know how to deliver the punchlines to setting up the perfect stage for laughter, managing ticketing with seamless precision, and enhancing the overall audience experience. Our flexible pricing accommodates comedy shows of all sizes, whether you're aiming for the intimacy of a comedy club or the grandeur of a theater event. We go above and beyond by offering our comedy expertise to help craft humorous scripts and sketches that guarantee your event will have your audience in splits and leave them with memories of uncontrollable laughter.",
       "image": "https://i.ibb.co/jhdCKF8/1000-F-560614611-mhwfau-XGn2kyv-WTp-Uf7-WADsp-D4fc-OEy-X.jpg"
     },
     {
       "id": 5,
       "name": "Event Photography and Videography",
-      "price": 13,
+      "price": 1000,
       "description": "Preserve the moments that matter most with our Event Photography and Videography services. Our expert team specializes in capturing the essence and magic of your entertainment event. We don't just take photos and videos; we create visual narratives that allow you to relive those cherished moments.Our coverage is all-encompassing, including candid shots that freeze spontaneous smiles, video highlights that encapsulate the event's spirit, and meticulous editing that ensures the final product is a masterpiece. Our pricing is highly flexible, tailored to your specific photography and videography needs, and we even offer advanced options like drone photography and 360-degree videos, providing a unique perspective that adds an extra layer of immersion to your event memories.",
       "image": "https://i.ibb.co/7VxrymW/woman-taking-professional-photos-23-2148503580.jpg"
     },
     {
       "id": 6,
       "name": "Themed Party Planning",
-      "price": 15,
+      "price": 1500,
       "description": "Transform your entertainment event into an unforgettable experience with our Themed Party Planning services. We pride ourselves on working closely with you to craft customized themes that transport your guests to different worlds, creating decor that sets the perfect mood, and arranging engaging entertainment and interactive activities that keep everyone captivated.Our pricing is as flexible as our creativity, adapting to your chosen theme and the size of your party, ensuring that your celebration aligns seamlessly with your vision and budget. To elevate the excitement further, our team can arrange celebrity appearances and specialty acts that add a touch of star power and uniqueness to your themed parties. Let us transform your imagination into an extraordinary celebration that leaves an everlasting impression on your guests.",
       "image": "https://i.ibb.co/RhK7qfz/event-manager-showing-plan-paper-23-2148085191.jpg"
     }

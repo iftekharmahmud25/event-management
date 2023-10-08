@@ -32,7 +32,7 @@ const Reviews = () => {
               <img
                 src={`${review.picture}`}
                 alt={review.name}
-                className="w-14 h-12 rounded-full  mt-3 shadow-lg "
+                className="w-16 h-16 rounded-full  mt-3 shadow-lg "
               />
             </div>
             <div className="w-[100%]">

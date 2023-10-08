@@ -35,7 +35,7 @@ const Navbar = () => {
                {
                  user && <div className="flex items-center">
                          <p className="pe-3"> {user.displayName}</p> 
-                        <p className="pe-3"> <img className="rounded-full w-10 h-10" src= {user.photoURL} alt="" /></p>
+                        <p className="pe-3"> <img className="rounded-full w-10 h-10" src=   {user.photoURL} alt="" /></p>
                     </div>
                }
             
