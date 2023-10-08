@@ -1,3 +1,4 @@
+import Aos from "aos";
 import { useEffect, useState } from "react";
 
 
@@ -11,11 +12,19 @@ const Reviews = () => {
             .catch((error) => console.error("Error fetching data:", error));
     }, []);
 
+    useEffect(()=>{
+      Aos.init();
+    },[])
+
+
+
+
+
     return (
         <div>
-       <div className="grid lg:grid-cols-2 grid-cols-1 gap-y-5 lg:gap-y-2 lg:gap-x-2 lg:me-0 lg:ms-0 me-6 ms-6">
+       <div    className="grid lg:grid-cols-2 grid-cols-1 gap-y-5 lg:gap-y-2 lg:gap-x-2 lg:me-0 lg:ms-0 me-6 ms-6">
        {reviews.map((review) => (
-        <div className="bg-cyan-950 text-white p-1  rounded-md" key={review.id}>
+        <div  data-aos="fade-up" className="bg-cyan-950 text-white p-1  rounded-md" key={review.id}>
             <div className=" px-3 items-center rounded-md bg-cyan-700"   >
             
            <div className="flex justify-center gap-2 p-2 lg:p-0">

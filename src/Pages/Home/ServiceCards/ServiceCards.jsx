@@ -1,3 +1,4 @@
+import Aos from "aos";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -13,11 +14,18 @@ const ServiceCards = () => {
             .then((data) => setServiceData(data))
             .catch((error) => console.error("Error fetching data:", error));
     }, []);
+     
+  useEffect(()=>{
+    Aos.init();
+  },[])
+
+
+
 
     return (
-        <div>
+        <div >
             {serviceData.map((service) => (
-                <div
+                <div data-aos="fade-up"
                     key={service.id}>
                     <div 
                     

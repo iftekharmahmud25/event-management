@@ -2,9 +2,10 @@ import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../Layout/MainLayout";
 import Home from "../Pages/Home/actualhome/Home";
 import Login from "../Pages/Login/Login";
-import SingUp from "../Pages/singup/SingUp";
+import SignUp from "../Pages/SignUp/SignUp";
 import CardDetails from "../Pages/CardDetails/CardDetails";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import PrivateRoute from "./PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -24,11 +25,11 @@ const router = createBrowserRouter([
              },
              {
                 path:"/signUp",
-                element: <SingUp></SingUp>
+                element: <SignUp></SignUp>
              },
              {  
                 path: "/services/:id",
-                element: <CardDetails></CardDetails>,
+                element:<PrivateRoute>  <CardDetails></CardDetails></PrivateRoute>,
                 loader : ()=> fetch('/services.json')
              }
          ]
