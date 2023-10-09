@@ -17,7 +17,7 @@ Currently, two official plugins are available:
   
 * Customer Reviews :
   * The website includes testimonials from well-known personalities who have used the services. These reviews provide social proof and build trust among potential clients.
-  * Sub-item 2
+    
   
 * Event Services :
   * The website offers a range of event planning services, including concert planning, theater production, film screening management, comedy show arrangements, and themed party planning. Users can explore detailed descriptions and pricing for each service.
@@ -28,6 +28,6 @@ Currently, two official plugins are available:
     
   
 * Private Routes :
-  *To ensure security and privacy, the website has private routes that only authenticated users can access. This feature protects sensitive information and restricts unauthorized access.
+  * To ensure security and privacy, the website has private routes that only authenticated users can access. This feature protects sensitive information and restricts unauthorized access.
     
   
