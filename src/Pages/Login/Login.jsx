@@ -5,8 +5,11 @@ import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 import app from "../../Firebase/Firebase.config";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
+
+ 
 
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
@@ -43,7 +46,8 @@ const handleGoogleSignIn = () => {
         navigate(location ?.state ? location.state :  '/')
     })
     .catch(error =>{
-        toast(error.message)
+         toast(error.message)
+      
     })
 
 }
@@ -51,6 +55,9 @@ const handleGoogleSignIn = () => {
     return (
   
     <div>
+       <Helmet>
+  <title>&#8707;ntertainPlaz | Login</title>
+ </Helmet>
         
          <div className="hero ">
             

@@ -7,6 +7,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { GoogleAuthProvider, getAuth, signInWithPopup, updateProfile } from "firebase/auth";
 import app from "../../Firebase/Firebase.config";
+import { Helmet } from "react-helmet-async";
 
 const SignUp = () => {
   const [showPassword,setShowPassword] = useState(false)
@@ -40,13 +41,12 @@ const SignUp = () => {
     const password = form.get('password');
     console.log(name, image, email, password)
 
-
-    if(password.length <6){
-       return toast('Password should be at least 6 characters or longer')
-    }
-
-    else if(!/A-Z/.test(password)){
-        return toast('Your password should have one upper case')
+    if (password.length < 6) {
+      return toast('Password should be at least 6 characters or longer')
+    } else if (!/[A-Z]/.test(password)) {
+      return toast('Your password should have at least one uppercase letter (A-Z)')
+    } else if (!/[!@#$%^&*]/.test(password)) {
+      return toast('Your password should have at least one special character')
     }
 
     // create user 
@@ -62,7 +62,7 @@ const SignUp = () => {
 
         }).catch((error) => {
           console.log(error)
-          setSignUpError(error.message)
+        
         });
 
         e.target.reset()
@@ -77,6 +77,9 @@ const SignUp = () => {
   }
   return (
     <div>
+              <Helmet>
+  <title>&#8707;ntertainPlaz | SignUp</title>
+ </Helmet>
 
       <div className="hero">
         <div className="hero-content ">
